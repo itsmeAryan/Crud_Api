@@ -1,0 +1,37 @@
+POST http://localhost:3001/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "user":"rihan ",
+    "email":"webdev@gmail.com",
+    "password":"123"
+}
+
+###
+POST  http://localhost:3001/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"webdev@gmail.com",
+    "password":"123"
+}
+
+###
+GET http://localhost:3001/ HTTP/1.1
+
+###
+GET http://localhost:3001/user-detail HTTP/1.1
+
+###
+GET http://localhost:3001/all-users HTTP/1.1
+
+###
+PUT http://localhost:3001/update-user/61fc3a1fd1ad4addd9f3af19 HTTP/1.1
+Content-Type: application/json
+
+{
+    "user":"vihan maurya"
+}
+
+###
+DELETE http://localhost:3001/delete-user/61fc3a1fd1ad4addd9f3af19 HTTP/1.1
